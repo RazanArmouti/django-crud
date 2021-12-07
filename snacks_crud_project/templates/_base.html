@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+    body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#FFEBCC
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #FFAFAF;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #FFAFAF;
+    color: #FFEBCC;
+  }
+  
+  .topnav a.active {
+    background-color: #FFEBCC;
+    color: #FFAFAF;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFAFAF;
+    color: black;
+    text-align: center;
+ }
+    </style>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks</title>
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <a href="{% url 'snacks' %}">Home</a>
+            <a href="{% url 'create-snack' %}">Create snack</a>
+        </div>
+    </header>
+
+    {% block content %}
+
+    {% endblock %}
+    <div class="footer">
+        <p>&copy;2021 Razan Armouty </p>
+        
+      </div>
+</body>
+</html>
